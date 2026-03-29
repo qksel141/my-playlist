@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>최애 앨범 소개</title>
+
+
+
+    <style>
+        /* 여기서부터 자유롭게 코딩을 시작하세요! */
+
+        /* #39FF14 */
+        /*#FF1493 */
+        /* (강사님이 주신 필수 색상 2개 잊지 마세요!) */
+
+
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            /* 테두리 두께를 크기에 포함시키는 마법의 속성 (나중에 배웁니다!) */
+
+            box-sizing: border-box;
+
+        }
+
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #39ff14, #ff1493);
+            min-height: 100vh;
+        }
+
+        .glass {
+
+            width: 300px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.15);
+            /* 투명도 */
+            backdrop-filter: blur(10px);
+            /* 유리 블러 효과 */
+            -webkit-backdrop-filter: blur(10px);
+            /* 크롬 호환 */
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        #album-header {
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 350px;
+
+        }
+
+        .main-box {
+            width: 700px;
+            padding: 25px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+            color: white;
+        }
+
+        .section-line {
+            padding: 20px 0;
+            border-top: 1px solid rgba(243, 155, 203, 0.2);
+        }
+
+        .artist-name {
+            color: #ff1493;
+        }
+
+        #charm-list {
+            list-style: none;
+        }
+        .listen-btn:hover{
+            color: #ff1493;
+            box-shadow: 0 6px 15px rgba(226, 106, 210, 0.938);
+        
+        }
+        .title-name:hover{
+            color: #ff1493;
+            transition: all.20s ease;
+            transform: translatey( -3px);
+        }
+        #track-table tr:nth-child(odd){
+             background-color: rgba(57,255,20,0.356);
+        }
+        #track-table tr:nth-child(even){
+             background-color: rgba(255,20,147,0.342);
+        }
+        #track-table{
+            border-collapse: collapse;
+        
+        }
+        .lyrics-section.section-line h2:hover{
+        
+             color: #ff1493;
+            transition: all.20s ease;
+            transform: translatey( -3px);
+
+        }
+        .ibduk-point:hover{
+        
+            color: #ff1493;
+            transition: all.20s ease;
+            transform: translatey( -3px);
+        }
+        .play-list:hover{
+            color: #ff1493;
+            transition: all.20s ease;
+            transform: translatey( -3px);
+
+        }
+     .highlight {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #ff1493;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+        /* 1. 타이포그래피 (h1, h2, .artist-name 등) 폰트, 색상, 크기, 정렬 */
+
+    </style>
+
+</head>
+
+<body>
+
+    <body>
+        <div class="main-box">
+
+            <header id="album-header">
+                <div class="info-box">
+                    <p class="artist-name">2조의 최애노래</p>
+                    <h1 class="title-name">LOV 3</h1>
+                    <p class="subtitle">2조의 최애노래 플리</p>
+                </div>
+            </header>
+
+            <section class="lyrics-section section-line">
+                <h2>🎵 킬링 파트 가사</h2>
+                <div class="lyrics-box">
+                    <p>난 아직 노리지 후반에 반전</p>
+                    <span class="highlight">또다시 보여줘야 돼</span>
+                    <p>퍼뜨려 L-O-V-E</p>
+                </div>
+            </section>
+
+            <section class="info-section section-line">
+                <h2 class="ibduk-point">✨ 입덕 포인트</h2>
+                <ul id="charm-list">
+                    <li></li>
+                    <li>휘민의 천재적인 샘플링 감각</li>
+                    <li>레이지를 기반한 독특한 비트</li>
+                </ul>
+            </section>
+
+            <section class="track-section section-line">
+                <h2 class="play-list">🎧 2조 추천 플레이리스트</h2>
+                <table id="track-table">
+                    <thead>
+                        <tr>
+                            <th>Track</th>
+                            <th>곡명</th>
+                            <th>Play Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Fly-day ChianaTown</td>
+                            <td>3:28</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>들키고싶은 마음에게</td>
+                            <td>6:17</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>Plastic Plants</td>
+                            <td>3:20</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>Cruel Summer</td>
+                            <td>2:59</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <footer id="album-footer" class="section-line">
+                <button class="listen-btn">전곡 들어보러 가기</button>
+            </footer>
+
+        </div>
+    </body>
+</body>
+
+</html>
